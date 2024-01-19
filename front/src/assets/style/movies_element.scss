@@ -1,0 +1,49 @@
+.movies {
+    background-color: black;
+    box-shadow: 0px 0px 10px rgb(42, 42, 42);
+    height: 100%;
+    font-size: 14px;
+    overflow: hidden;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 25px;
+    margin: 20px 0;
+
+    figure {
+        width: 100%;
+    }
+   .url{
+    cursor: pointer;
+   }
+    .table__div__container {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px 10px 0;
+        height: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    p {
+        margin: 5px 0;
+        word-wrap: break-word;
+
+
+        &:first-child {
+
+            max-width: 70%;
+            width: fit-content;
+            text-wrap: wrap;
+            color: rgb(255, 215, 0);
+        }
+    }
+
+    span {
+        margin-right: 5px;
+        color: rgb(155, 153, 153);
+    }
+}

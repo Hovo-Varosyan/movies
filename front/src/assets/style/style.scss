@@ -1,0 +1,59 @@
+@use'color';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+    background-color:color.$background;
+    color: white;
+    font-size: 18px;
+}
+
+main {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+
+
+a {
+    list-style: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+hr {
+    border-color:color.$gold;
+}
+button, input[type="submit"]{
+    cursor: pointer;
+}
+
+video,img,figure{
+    width: 100%;
+    height: 100%;
+}
+hr{
+    width: 100%;
+}
+input[type="submit"]{
+    color: color.$gold;
+     padding: 5px 10px;
+     font-family: inherit;
+     font-size: 0.8rem;
+ 
+     background-color:color.$background ;
+}
+
+.blue{
+    background-color: color.$input-value !important;
+   }

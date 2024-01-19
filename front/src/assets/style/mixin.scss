@@ -1,0 +1,57 @@
+@use 'color';
+
+%click-effect {
+    border-left: none;
+    border-top: none;
+    border-right: 1px solid white;
+    border-bottom: 1px solid rgb(88, 88, 88);
+}
+
+@mixin click ($type) {
+    border-left: 1px solid rgb(88, 88, 88);
+    border-top: 1px solid white;
+
+    @if $type=="submit" {
+        box-shadow: 3px 3px 6px rgb(35, 35, 35);
+
+        &:active {
+            box-shadow: -3px -3px 6px rgb(35, 35, 35);
+            @extend %click-effect;
+        }
+    }
+
+    @else if $type=="text" {
+        &:focus {
+            @extend %click-effect;
+        }
+    }
+}
+
+@mixin slidebutton {
+    .slidebutton {
+
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(97, 97, 97);
+        opacity: 0.5;
+        width: 40px;
+        height: 100%;
+        position: absolute;
+        user-select: none;
+        color: color.$gold;
+        font-size: 26px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        &:first-child {
+            top: 0;
+            left: 0;
+        }
+
+        &:last-child {
+            top: 0;
+            right: 0;
+        }
+    }
+}

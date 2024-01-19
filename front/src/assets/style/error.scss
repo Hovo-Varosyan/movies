@@ -1,0 +1,6 @@
+@use './color.scss';
+.error{
+    color:color.$gold ;
+    text-align: left;
+    padding: 10px;
+}

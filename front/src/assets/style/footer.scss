@@ -1,0 +1,27 @@
+@use 'color';
+.hr{
+    width: 100%;
+    
+}
+
+.footer{
+    width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+gap: 30px;
+padding: 10px 0;
+color:color.$gold;
+background-color: color.$backg-elem;
+p,ul{
+    margin:0 10%;
+}
+
+li{
+    line-height: 35px;
+    &:hover{
+        text-shadow: 1px 1px 10px  color.$gold;
+        transform: scale(1.1);
+    }
+}
+}

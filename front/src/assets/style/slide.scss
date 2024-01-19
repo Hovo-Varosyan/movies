@@ -1,0 +1,28 @@
+@use 'color';
+@use 'mixin';
+
+.slidegrid {
+    position: relative;
+    margin: 20px 0;
+    height: 100%;
+
+    .slidegridelem {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        overflow: hidden;
+        column-gap: 25px;
+
+        figure {
+            border: 1px solid color.$gold;
+            width: 100%;
+
+            img {
+                width: 100%;
+                aspect-ratio: 4/5;
+
+            }
+        }
+    }
+
+    @include mixin.slidebutton
+}

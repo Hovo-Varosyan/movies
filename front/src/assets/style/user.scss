@@ -1,0 +1,84 @@
+@use "color";
+
+.user__container {
+  width: 100%;
+  height: 250px;
+  max-height: 350px;
+
+  overflow: hidden;
+
+  span {
+    text-align: justify !important;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 20px;
+    max-width: 300px;
+    display: block;
+    word-wrap: break-word;
+    text-align: center;
+    color: color.$gold;
+  }
+
+  .user__data {
+    height: 60%;
+    border-bottom: 1px solid color.$gold;
+    background-color: color.$backg-elem;
+    position: relative;
+
+    figure {
+      border-radius: 50%;
+      width: 130px;
+      height: 120px;
+      border: 1px solid color.$gold;
+      overflow: hidden;
+      position: absolute;
+      bottom: -60px;
+      left: calc(50% - 130px);
+    }
+  }
+}
+
+.user__list {
+  margin: 10px 0;
+  display: flex;
+  gap: 20px;
+
+  .user__menu {
+    margin-bottom: 18px;
+    margin-top: 40px;
+    background-color: color.$backg-elem;
+
+    .close {
+
+      padding: 5px 15px;
+      svg{
+        cursor: pointer;
+      }
+      
+      color: color.$gold;
+    }
+
+    .menu__button {
+      background-color: color.$backg-elem;
+      color: color.$gold;
+      border: none;
+      padding: 10px;
+      font-family: initial;
+      font-size: 20px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu__name {
+      width: 100%;
+      border:none !important;
+      display: flex;
+      gap: 20px;
+      padding: 15px;
+      cursor: pointer;
+      justify-content: space-between;
+      color: color.$gold;
+    }
+  }
+}

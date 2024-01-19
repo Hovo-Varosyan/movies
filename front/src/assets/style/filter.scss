@@ -1,0 +1,44 @@
+.section__filter{
+    width: 100%;
+   background-color: black;
+   justify-content: center;
+   align-items: center;
+   padding: 0 15px;
+
+}
+
+.div__section {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 15px;
+    max-width: 1480px;
+    select {
+        
+        font-style: italic;
+        font-weight: 400;
+        color:rgb(255, 215, 0);
+        background-color: black;
+        padding: 5px 10px;
+        border-radius: 20px;
+        box-shadow:-2px -2px 15px black, 2px 2px 15px black  ;
+
+
+        &::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: black;
+            border: 1px solid white;
+            border-radius: 10px;
+
+
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: rgb(19, 19, 19);
+
+        }
+    }
+}

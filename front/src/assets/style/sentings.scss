@@ -1,0 +1,71 @@
+@use 'color';
+
+.fileupload {
+    display: flex;
+    padding: 10px 0;
+    gap: 20px;
+}
+
+h4 {
+    padding: 10px 0;
+}
+
+.input__senting {
+    padding: 5px;
+}
+
+.div__container {
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 15px;
+
+}
+.pointer{
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+
+    &>div {
+        background-color: color.$backg-elem;
+        box-shadow: color.$shadow;
+        padding: 15px;
+    }
+
+    label {
+        color: color.$gold !important;
+    }
+}
+
+//material ui
+.css-sghohy-MuiButtonBase-root-MuiButton-root {
+    background-color: black !important;
+    border: 1px solid color.$gold !important;
+
+}
+
+.css-10botns-MuiInputBase-input-MuiFilledInput-input {
+    background-color: color.$background !important;
+    color: color.$gold !important;
+}
+
+.css-1x51dt5-MuiInputBase-input-MuiInput-input {
+    background-color: color.$background !important;
+    color: color.$gold !important;
+    padding: 5px !important;
+
+}
+
+.css-v4u5dn-MuiInputBase-root-MuiInput-root {
+    background-color: color.$background !important;
+
+}

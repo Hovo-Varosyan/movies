@@ -1,0 +1,18 @@
+@use'../color.scss';
+.form__search{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    input[type="search"]{
+        outline: none;
+         color: white;
+         padding: 5px 10px;
+         font-family: inherit;
+         font-size: 0.8rem;
+         background-color:color.$background ;
+         &:focus{
+            border:1px solid color.$gold;
+         }
+    }
+   
+}
