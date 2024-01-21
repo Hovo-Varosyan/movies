@@ -1,7 +1,8 @@
 const userModel = require("../models/user")
 
 class User {
-    static name = async (req, res) => {
+    
+    static reName = async (req, res) => {
         try {
             const user = await userModel.findByIdAndUpdate({ _id: req.body.id }, { name: req.body.name })
             if (user) {
@@ -13,6 +14,7 @@ class User {
             res.status(500).json({ error: 'Ошибка при обновлении пользователя' });
         }
     }
+
     static delete = async (req, res) => {
         try {
             const { id } = req.user.id

@@ -13,6 +13,6 @@ router.get("/:id", JwtVerification, async (req, res, next) => {
   }
 });
 router.post('/logout', Login.logout)
-router.post('/name', User.name)
+router.post('/name', User.reName)
 router.post('/delete', User.delete)
 module.exports = router;

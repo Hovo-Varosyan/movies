@@ -24,7 +24,7 @@ export default function Slide({ data, timer=3000 }) {
     return (
         <>
             <section className="slidegrid">
-                <div className="slidebutton" onMouseEnter={(e) => { slide === 0 ? e.currentTarget.style.cursor = "not-allowed" : e.currentTarget.style.cursor = "pointer" }} onClick={() => { slide !== 0 ? setSlide(slide - 1) : setSlide(9) }}> {"<"} </div>
+                <div className="slidebutton" onMouseEnter={(e) => { slide === 0 ? e.currentTarget.style.cursor = "not-allowed" : e.currentTarget.style.cursor = "pointer" }} onClick={() => { slide !== 0 && setSlide(slide - 1)  }}> {"<"} </div>
                 <div className="slidegridelem">
                     {
                         data.slice(slide, slide + 5).map((e) => {

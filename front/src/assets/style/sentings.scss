@@ -21,7 +21,21 @@ h4 {
     gap: 20px;
     justify-content: space-between;
     padding: 15px;
+    .email{
+        background-color: rgb(19, 19, 19);
+        border: none;
+        width: 180px;
+        &:focus{
+            background-color: rgb(19, 19, 19);
+            color: color.$gold ;
+            outline: none;
+            padding: 3px;
+        }
 
+    }
+.delete:hover{
+  color: rgb(93, 1, 139);
+}
 }
 .pointer{
     cursor: pointer;

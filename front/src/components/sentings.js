@@ -27,8 +27,8 @@ const VisuallyHiddenInput = styled("input")({
 export const Sentings = () => {
     const [file, setFile] = useState("не выбрано");
     const [showPassword, setShowPassword] = useState(false);
+    const [showNewPassword, setShowNewPassword] = useState(false);
 
-    const handleClickShowPassword = () => setShowPassword((show) => !show);
     const handleMouseDownPassword = (event) => {
         event.preventDefault();
     };
@@ -81,7 +81,7 @@ export const Sentings = () => {
                                 <InputAdornment position="end">
                                     <IconButton
                                         aria-label="toggle password visibility"
-                                        onClick={handleClickShowPassword}
+                                        onClick={() => setShowPassword((show) => !show)}
                                         onMouseDown={handleMouseDownPassword}
                                     >
                                         {showPassword ? <VisibilityOff /> : <Visibility />}
@@ -95,15 +95,15 @@ export const Sentings = () => {
                         </InputLabel>
                         <Input
                             id="standard-adornment-password"
-                            type={showPassword ? "text" : "password"}
+                            type={showNewPassword ? "text" : "password"}
                             endAdornment={
                                 <InputAdornment position="end">
                                     <IconButton
                                         aria-label="toggle password visibility"
-                                        onClick={handleClickShowPassword}
+                                        onClick={() => setShowNewPassword((show) => !show)}
                                         onMouseDown={handleMouseDownPassword}
                                     >
-                                        {showPassword ? <VisibilityOff /> : <Visibility />}
+                                        {showNewPassword ? <VisibilityOff /> : <Visibility />}
                                     </IconButton>
                                 </InputAdornment>
                             }/>
@@ -113,15 +113,12 @@ export const Sentings = () => {
                 <hr />
                 <div className="div__container">
                     <h5>поменять Почту</h5>
-                    <FormControl variant="standard">
-                        <InputLabel htmlFor="component-simple">Почта</InputLabel>
-                        <Input id="component-simple" />
-                    </FormControl>
+                    <input type="email" name="email"  className="email"/>
                     <Submit value={"Сохранить"} />
                 </div>
                 <hr />
                 <div className="div__container">
-                    <h5 className="pointer">удалит аккаунт</h5>
+                    <h5 className="pointer delete">удалит аккаунт</h5>
                 </div>
             </div>
         </section>

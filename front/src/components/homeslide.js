@@ -27,7 +27,7 @@ const Homeslide = () => {
                                 {data[slide].content}
                             </div>
                             <div>
-                                <Button variant="contained">Смотреть</Button>
+                                <Button className="button" variant="contained">Смотреть</Button>
                             </div>
                         </div>
                     </div>
