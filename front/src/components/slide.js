@@ -4,6 +4,7 @@ import '../assets/style/slide.scss'
 export default function Slide({ data, timer=3000 }) {
 
     const [slide, setSlide] = useState(0)
+    
     function next() {
         slide !== 9 ? setSlide(slide + 1) : setSlide(0)
     }

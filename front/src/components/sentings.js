@@ -25,6 +25,7 @@ const VisuallyHiddenInput = styled("input")({
 });
 
 export const Sentings = () => {
+    
     const [file, setFile] = useState("не выбрано");
     const [showPassword, setShowPassword] = useState(false);
     const [showNewPassword, setShowNewPassword] = useState(false);

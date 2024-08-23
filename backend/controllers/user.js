@@ -4,7 +4,7 @@ class User {
     
     static reName = async (req, res) => {
         try {
-            const user = await userModel.findByIdAndUpdate({ _id: req.body.id }, { name: req.body.name })
+            const user = await userModel.findByIdAndUpdate({ _id: req.user.id }, { name: req.body.name })
             if (user) {
                 return res.status(200).json({ message: 'Успешно обновлено' });
             } else {
